@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наш Всесвіт ✨</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="sky" id="sky"></div>
+
+    <!-- Перша сцена -->
+    <main>
+        <section class="content scene" id="intro">
+            <div class="star">✦ · ˚ · ✧ · ˚ · ✦</div>
+            <p class="eyebrow">ОДНА ІСТОРІЯ СЕРЕД МІЛЬЙОНІВ ЗІРОК</p>
+            <h1>Коханій<br>та єдиній...</h1>
+            <p>У цьому безмежному всесвіті є дещо особливе, що відомо лише зіркам 💜</p>
+            <button class="oracle-button" id="startButton">
+                Мандрувати до зірок ✨
+            </button>
+        </section>
+
+        <!-- Друга сцена -->
+        <section class="content scene" id="universe" hidden>
+            <div class="star">✦ · ˚ · ✧ · ˚ · ✦</div>
+            <h1>Зоряний Всесвіт</h1>
+            <p>Десь серед зірок, почалась наша історія, ще до нашого знайомства 💜</p>
+            <p class="map-hint">Зіркам відомо те що скрито від людських очей, але іноді можно почути що ті кажуть ✨</p>
+
+            <div class="star-map">
+                <button class="memory-star" style="--x:15%;--y:20%" data-memory="0" aria-label="Перша зірка">✦</button>
+                <button class="memory-star" style="--x:70%;--y:18%" data-memory="1" aria-label="Друга зірка">✧</button>
+                <button class="memory-star" style="--x:43%;--y:38%" data-memory="2" aria-label="Третя зірка">✦</button>
+                <button class="memory-star" style="--x:78%;--y:42%" data-memory="3" aria-label="Четверта зірка">✧</button>
+                <button class="memory-star" style="--x:22%;--y:65%" data-memory="4" aria-label="П'ята зірка">✦</button>
+                <button class="memory-star" style="--x:53%;--y:78%" data-memory="5" aria-label="Шоста зірка">✧</button>
+                <button class="memory-star" style="--x:80%;--y:70%" data-memory="6" aria-label="Сьома зірка">✦</button>
+            </div>
+
+            <div id="memory-card" class="memory-card" aria-live="polite">
+                Торкнися щоб послухати кожну зірку 🌙
+            </div>
+
+            <button id="finalStar" class="final-star" type="button" hidden
+                aria-label="Відкрити таємний лист">✨</button>
+
+            <div class="star">☾ ✨ ☽</div>
+        </section>
+
+        <!-- Третя сцена -->
+        <section class="content scene" id="letterScene" hidden>
+            <div class="star">✦ · ˚ · ✧ · ˚ · ✦</div>
+            <p class="eyebrow">МАЛЕНЬКЕ ПОСЛАННЯ ДЛЯ ТЕБЕ</p>
+            <h1>Лист із зірок</h1>
+            <p>Серед мільйонів зірок бачу лише тебе 💜</p>
+
+            <p class="map-hint" id="scrollHint">
+                Натисни на сувій, щоб побачити послання ✨
+            </p>
+
+            <div class="scroll-wrap">
+                <button class="scroll" id="scrollButton" type="button"
+                    aria-label="Розгорнути сувій" aria-expanded="false">
+
+                    <span class="scroll-rod scroll-rod-top" aria-hidden="true">
+                        <span class="scroll-knob"></span>
+                        <span class="scroll-knob"></span>
+                    </span>
+
+                    <span class="scroll-paper" id="scrollPaper">
+                        <span class="scroll-message" id="scrollMessage" hidden>
+                            <span class="paper-star">✦</span>
+                            <span class="paper-label">ДЛЯ ОВНА 💜</span>
+
+                            <span class="paper-title">
+                                Ти - центр мого Всесвіту
+                            </span>
+
+                            <span class="paper-text">
+                                Як ти вислухала ті старі зірки?
+                                Та вони як дізналися, що ми з тобою зійшлися, так усі з розуму посходили.
+                                Ех ну й причепилися, старі!
+                                Божевільні, світять уже тисячу років, так ще й чогось від нас хочуть.
+                                Еммм, ну загалом вони праві.
+                                Колись ми з тобою освітимо весь небосхил.
+                            </span>
+
+                            <span class="paper-text">
+                                От палець у рота тобі точно класти не збираюся — минулого разу ледь без пальця не залишила.
+                                Хайне сонечко моє, ти в центрі мого Всесвіту з тих пір, як побачив тебе вперше.
+                                А це лише початок, на тебе чекає ще багато сюрпризів.
+                                Югою по небосхилу пролетимо, подивимось на кожне сузір'я та сверх нову.
+                            </span>
+
+                            <span class="paper-text">
+                                Найгарніша, найніжніша та найтепліша серед усіх сузір'їв.
+                                Твоє полум'я ніжніше за молоді зірки, а вибухи — величні, наче народження наднової.
+                                Нехай у твоєму небі завжди буде трохи більше світла. ✨<br>
+                                Цікаво, знайдеш секрет мого посилання😊
+                            </span>
+
+                            <span class="paper-signature">З теплом і зоряним світлом ✨</span>
+                        </span>
+                    </span>
+
+                    <span class="scroll-rod scroll-rod-bottom" aria-hidden="true">
+                        <span class="scroll-knob"></span>
+                        <span class="scroll-knob"></span>
+                    </span>
+                </button>
+            </div>
+
+            <div class="star">☾ ✨ ☽</div>
+        </section>
+    </main>
+</body>
+</html>
